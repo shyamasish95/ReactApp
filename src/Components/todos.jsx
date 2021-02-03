@@ -24,7 +24,7 @@ class Todos extends Component{
         ]
     }
 
-    getDate(){
+    getDate =()=>{
         let d = new Date();
         let n = d.getTime();
         return n;
@@ -52,7 +52,7 @@ class Todos extends Component{
         if(value){
             const todos = [...this.state.todos];
             todos.push({
-                id:this.getTime(),
+                id:this.getDate(),
                 value:value,
                 isDone:false
             });

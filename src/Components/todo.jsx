@@ -3,7 +3,7 @@ import React,{ Component } from "react";
 class Todo extends Component{
     render(){
         return(
-            <React.Fragment>
+            <>
                 <td style={{width:10}} className="text-center">
                     {this.props.index}
                 </td>
@@ -18,7 +18,7 @@ class Todo extends Component{
                     <button onClick={()=>this.props.fooDelete(this.props.todo.id)} className="btn btn-danger btn-sm">Delete</button>
                     
                 </td>
-            </React.Fragment>
+            </>
         )
     }
     renderToDo(){
